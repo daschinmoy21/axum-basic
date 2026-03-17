@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chinmoy</title>
+		<style>
+			:root {
+				color-scheme: light;
+				--panel: rgba(255, 255, 255, 0.72);
+				--text: #1a1815;
+				--muted: #6b655d;
+				--line: rgba(26, 24, 21, 0.08);
+				--shadow: 0 24px 60px rgba(46, 38, 28, 0.12);
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+			
+			body {
+				margin: 0;
+				min-height: 100vh;
+				display: grid;
+				place-items: center;
+				padding: 24px;
+				font-family: "Georgia", "Times New Roman", serif;
+				color: var(--text);
+				background:
+				radial-gradient(circle at top, rgba(216, 199, 171, 0.75), transparent 42%),
+				linear-gradient(135deg, #f7f4ee 0%, #ece4d6 100%);
+			}
+			
+			.card {
+				width: min(100%, 560px);
+				padding: 40px 32px;
+				border: 1px solid var(--line);
+				border-radius: 28px;
+				background: var(--panel);
+				backdrop-filter: blur(16px);
+				box-shadow: var(--shadow);
+			}
+			
+			.label {
+				margin: 0 0 12px;
+				font-size: 0.78rem;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+				color: var(--muted);
+			}
+			
+			h1 {
+				margin: 0;
+				font-size: clamp(2.8rem, 8vw, 4.8rem);
+				line-height: 0.95;
+				font-weight: 500;
+			}
+			
+			p {
+				margin: 18px 0 0;
+				font-size: 1.05rem;
+				color: var(--muted);
+			}
+			
+			.roll {
+				display: inline-block;
+				margin-top: 28px;
+				padding-top: 18px;
+				border-top: 1px solid var(--line);
+				font-size: 0.95rem;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="card">
+			<p class="label">DevOps Assignment</p>
+			<h1>Chinmoy</h1>
+			<div class="roll">Roll No 2023bcs52</div>
+		</main>
+	</body>
+</html>
